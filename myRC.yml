@@ -8,12 +8,11 @@ spec:
     app: myapp
   template:
     metadata:
-      name: myapp
       labels:
         app: myapp
     spec:
       containers:
-        - name: myapp
+        - name: myapp-container
           image: nginx
           ports:
             - containerPort: 8080
