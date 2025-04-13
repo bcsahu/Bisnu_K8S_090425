@@ -7,7 +7,7 @@ metadata:
 spec:
   replicas: 2
   selector:
-    matchLevels:
+    matchLebels:
       app: myapp1
   template:
     metadata:
@@ -15,7 +15,7 @@ spec:
         app: myapp1
     spec:
       containers:
-        - name: myapp1
-          image: nginx:1.14.2
-          ports:
-          - containerPort: 8080
+      - name: myapp1
+        mage: nginx:1.14.2
+        ports:
+        - containerPort: 8080
